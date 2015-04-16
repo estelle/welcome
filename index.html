@@ -8,6 +8,88 @@ Made by: Estelle Weyl
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 -->
 <link rel="stylesheet" href="css/index.css"/>
+<style>
+#chatList section {
+  background-image: url(img/peopleITalkTo.png);
+  background-repeat: no-repeat;
+  background-position: center 95%;
+}
+#chatList img {
+  visibility:hidden;
+  margin-top: 40px;
+}
+
+
+
+
+#linkedinDrinking .linkedin {
+   font-family: times, times new roman, serif;
+   border-color: #ccc;
+   border-width: 40px 10px 0;
+   border-style: solid;
+   width: 80vw;
+   margin: auto;
+   padding: 20px 20px 0;
+ }
+.linkedin p {
+   font-size: 1.5rem;
+}
+#linkedinDrinking mark {
+  background-color: yellow;
+}
+
+#worstjob div:first-of-type {
+  height: 85vh;
+  overflow:scroll;
+  padding: 20px;
+}
+
+#schools,
+#pipes {
+  background-image: url(img/pipeline.png);
+  background-size: cover;
+}
+#schools svg text {
+  text-shadow: 1px 1px 1px white, 3px 3px 3px black;
+}
+
+#students {
+
+}
+
+#leaks {
+  background-image: url(img/pipelineleak.png);
+  background-size: cover;
+}
+
+
+#deathbulge { /* comic */
+  background-image: url(img/deathbulge.png);
+  background-repeat:  no-repeat;
+  background-size:  contain;
+  background-position: center;
+}
+
+#easyhard blockquote {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10vw;
+}
+#easyhard blockquote * {
+  font-size: 1.8rem;
+}
+#easyhard blockquote > div {
+  flex: 0 0 45%;
+}
+#easyhard blockquote > p {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.twitter-tweet {
+  margin-right: 240px;
+}
+</style>
 </head>
 
 <body>
@@ -31,8 +113,8 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
     </div>
 
 <!-- Recruiter 1-->
-<div class="slide intro">
-  <header><h1>There are tons of jobs available</h1></header>
+<div class="slide intro" id="callLog">
+  <header><h1></h1></header>
     <section class="content">
       <img alt="90% of calls are from recruiters" src="img/piechart.png">
     </section>
@@ -40,50 +122,63 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 
 <!-- Who I would like to talk to
 It's a champagne problem-->
-<div class="slide intro">
-  <header><h1>Whom I am willing to talk to</h1></header>
-    <section class="content">
-      <img alt="I would rather be speaking to wrong callers" src="img/peopleITalkTo.png">
+<div class="slide intro" id="chatList">
+  <header><h1></h1></header>
+    <section class="content"><img alt="I would rather be speaking to wrong callers" src="img/peopleITalkTo2.png">
     </section>
 </div>
 
 <!-- recruiters don't know what they're doing -->
-<div class="slide">
+<div class="slide" id="linkedinDrinking">
 <blockquote class="twitter-tweet" lang="en"><p>Everyone who (LinkedIn) endorsed me for drinking, your dream has been realized: <a href="http://t.co/jrtx9GPykv">pic.twitter.com/jrtx9GPykv</a></p>&mdash; Jay Fields (@thejayfields) <a href="https://twitter.com/thejayfields/status/573035300110385152">March 4, 2015</a></blockquote>
+  <div class="linkedin">
+    <p><span style="font-family: arial, sans-serif">Good Day</span> Jay Fields,</p>
+    <p>Greetings and thanks for joining my network on LinkedIn. I am interested in discussing <mark>your experience with back-end development and drinking</mark>, as we have been looking for a distinguished candidate such as yourself for a position with one of our clients.
+  </div>
 </div>
 
 
 <!-- worst job ever -->
-<div class="slide">
-  <div style="height: 85vh; overflow:scroll">
+<div class="slide" id="worstjob">
+  <div>
   <img src="img/worstjobever.png">
 </div>
 </div>
 
 <!-- What recruiters sell us -->
-<div class="slide">
-<blockquote class="twitter-tweet" lang="en"><p>What recruiters think I want: Beer cart, ping pong table&#10;What I really want: Silence, coworkers with good table manners, attention to UX</p>&mdash; Rebecca Slatkin (@RebeccaSlatkin) <a href="https://twitter.com/RebeccaSlatkin/status/588061034822377472">April 14, 2015</a></blockquote>
+<div class="slide" id="pingpong">
+<blockquote class="twitter-tweet" lang="en"><p>What recruiters think I want: Beer cart, ping pong table.
+  <br/>
+  <br/>What I really want: Silence, coworkers with good table manners, attention to UX</p>&mdash; Rebecca Slatkin (@RebeccaSlatkin) <a href="https://twitter.com/RebeccaSlatkin/status/588061034822377472">April 14, 2015</a></blockquote>
 </div>
 
 
 <!-- Huge Pipes -->
-<div class="slide" style="background-image: url(img/pipeline.png);  background-size: cover;">
+<div class="slide" id="pipes">
   <header><h1></h1></header>
     <section class="content">
     </section>
 </div>
 
 <!-- schools -->
-<div class="slide">
+<div class="slide" id="schools">
 
 
 <svg width="960" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" style="
-transform: scale(1.5); transform-origin: top left;"><g></g><g transform="translate(480,300)scale(1.038062334060669,1.038062334060669)"><text text-anchor="middle" transform="translate(159,64)rotate(59.99999999999999)" style="font-size: 52px; font-family: Impact; fill: rgb(165, 81, 148);">Code</text><text text-anchor="middle" transform="translate(-67,68)rotate(59.999999999999986)" style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57);">End</text><text text-anchor="middle" transform="translate(178,-33)rotate(59.99999999999999)" style="font-size: 100px; font-family: Impact; fill: rgb(231, 186, 82);">University</text><text text-anchor="middle" transform="translate(-130,-94)rotate(-29.999999999999993)" style="font-size: 72px; font-family: Impact; fill: rgb(231, 203, 148);">College</text><text text-anchor="middle" transform="translate(-96,35)rotate(29.999999999999996)" style="font-size: 80px; font-family: Impact; fill: rgb(132, 60, 57);">School</text><text text-anchor="middle" transform="translate(-59,-197)rotate(-29.999999999999996)" style="font-size: 52px; font-family: Impact; fill: rgb(173, 73, 74);">Academy</text><text text-anchor="middle" transform="translate(312,-26)rotate(29.999999999999996)" style="font-size: 37px; font-family: Impact; fill: rgb(214, 97, 107);">Community</text><text text-anchor="middle" transform="translate(-116,-63)rotate(59.99999999999999)" style="font-size: 37px; font-family: Impact; fill: rgb(231, 150, 156);">San</text><text text-anchor="middle" transform="translate(91,-12)rotate(59.99999999999999)" style="font-size: 37px; font-family: Impact; fill: rgb(123, 65, 115);">State</text><text text-anchor="middle" transform="translate(282,-25)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148);">Codecademy</text><text text-anchor="middle" transform="translate(-20,-137)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189);">Foothill</text><text text-anchor="middle" transform="translate(-199,-158)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214);">Francisco</text><text text-anchor="middle" transform="translate(-38,-49)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121);">PluralSight</text><text text-anchor="middle" transform="translate(183,12)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163);">Front</text><text text-anchor="middle" transform="translate(138,-21)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207);">Masters</text><text text-anchor="middle" transform="translate(109,-128)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222);">General</text><text text-anchor="middle" transform="translate(-215,-129)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57);">Assembly</text><text text-anchor="middle" transform="translate(57,-79)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82);">Ohlone</text><text text-anchor="middle" transform="translate(-228,-145)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107);">Stanford</text><text text-anchor="middle" transform="translate(-193,-31)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156);">Udemy</text><text text-anchor="middle" transform="translate(38,-92)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49);">Palm</text><text text-anchor="middle" transform="translate(198,-167)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57);">Beach</text><text text-anchor="middle" transform="translate(45,-108)rotate(29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82);">Portland</text><text text-anchor="middle" transform="translate(142,81)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148);">Jose</text><text text-anchor="middle" transform="translate(146,-47)rotate(-29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57);">Berkeley</text><text text-anchor="middle" transform="translate(-47,-28)" style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74);">Rochester</text><text text-anchor="middle" transform="translate(-159,12)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107);">Khan</text><text text-anchor="middle" transform="translate(-210,-32)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156);">Girl</text><text text-anchor="middle" transform="translate(-234,-105)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115);">Develop</text><text text-anchor="middle" transform="translate(204,29)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148);">Black</text><text text-anchor="middle" transform="translate(-136,-69)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189);">Girls</text><text text-anchor="middle" transform="translate(-242,-25)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214);">Thinkful</text><text text-anchor="middle" transform="translate(141,-8)" style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121);">Miami</text><text text-anchor="middle" transform="translate(48,-121)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163);">Ad</text><text text-anchor="middle" transform="translate(-263,-110)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207);">Harvard</text><text text-anchor="middle" transform="translate(209,111)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222);">Carnegie</text><text text-anchor="middle" transform="translate(-198,19)rotate(-29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57);">Mellon</text><text text-anchor="middle" transform="translate(-123,34)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82);">Hebrew</text><text text-anchor="middle" transform="translate(-109,83)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107);">Georgia</text><text text-anchor="middle" transform="translate(-215,7)rotate(-59.999999999999986)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156);">Southern</text><text text-anchor="middle" transform="translate(-42,-106)rotate(-59.999999999999986)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49);">Loyola</text><text text-anchor="middle" transform="translate(229,132)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57);">Marymount</text><text text-anchor="middle" transform="translate(126,41)rotate(29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82);">Salzburg</text><text text-anchor="middle" transform="translate(156,95)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148);">Applied</text><text text-anchor="middle" transform="translate(-259,-41)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57);">Science</text><text text-anchor="middle" transform="translate(82,140)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74);">Ulster</text><text text-anchor="middle" transform="translate(-18,-2)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107);">Glasgow</text><text text-anchor="middle" transform="translate(-42,88)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156);">Calgary</text><text text-anchor="middle" transform="translate(-251,-133)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115);">Colby</text><text text-anchor="middle" transform="translate(-285,-70)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148);">Hackbright</text><text text-anchor="middle" transform="translate(339,76)rotate(59.99999999999999)" style="font-size: 37px; font-family: Impact; fill: rgb(206, 109, 189);">Selftaught</text><text text-anchor="middle" transform="translate(-55,165)rotate(-29.999999999999993)" style="font-size: 52px; font-family: Impact; fill: rgb(222, 158, 214);">Conferences</text><text text-anchor="middle" transform="translate(-175,104)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121);">Acedemy</text><text text-anchor="middle" transform="translate(51,59)rotate(59.99999999999999)" style="font-size: 80px; font-family: Impact; fill: rgb(82, 84, 163);">Self taught</text></g></svg>
+transform: scale(1.5); transform-origin: top left; "><g></g><g transform="translate(480,300)scale(1.038062334060669,1.038062334060669)"><text text-anchor="middle" transform="translate(159,64)rotate(59.99999999999999)" style="font-size: 52px; font-family: Impact; fill: rgb(165, 81, 148);">Code</text><text text-anchor="middle" transform="translate(-67,68)rotate(59.999999999999986)" style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57);">End</text><text text-anchor="middle" transform="translate(178,-33)rotate(59.99999999999999)" style="font-size: 100px; font-family: Impact; fill: rgb(231, 186, 82);">University</text><text text-anchor="middle" transform="translate(-130,-94)rotate(-29.999999999999993)" style="font-size: 72px; font-family: Impact; fill: rgb(231, 203, 148);">College</text><text text-anchor="middle" transform="translate(-96,35)rotate(29.999999999999996)" style="font-size: 80px; font-family: Impact; fill: rgb(132, 60, 57);">School</text><text text-anchor="middle" transform="translate(-59,-197)rotate(-29.999999999999996)" style="font-size: 52px; font-family: Impact; fill: rgb(173, 73, 74);">Academy</text><text text-anchor="middle" transform="translate(312,-26)rotate(29.999999999999996)" style="font-size: 37px; font-family: Impact; fill: rgb(214, 97, 107);">Community</text><text text-anchor="middle" transform="translate(-116,-63)rotate(59.99999999999999)" style="font-size: 37px; font-family: Impact; fill: rgb(231, 150, 156);">San</text><text text-anchor="middle" transform="translate(91,-12)rotate(59.99999999999999)" style="font-size: 37px; font-family: Impact; fill: rgb(123, 65, 115);">State</text><text text-anchor="middle" transform="translate(282,-25)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148);">Codecademy</text><text text-anchor="middle" transform="translate(-20,-137)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189);">Foothill</text><text text-anchor="middle" transform="translate(-199,-158)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214);">Francisco</text><text text-anchor="middle" transform="translate(-38,-49)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121);">PluralSight</text><text text-anchor="middle" transform="translate(183,12)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163);">Front</text><text text-anchor="middle" transform="translate(138,-21)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207);">Masters</text><text text-anchor="middle" transform="translate(109,-128)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222);">General</text><text text-anchor="middle" transform="translate(-215,-129)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57);">Assembly</text><text text-anchor="middle" transform="translate(57,-79)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82);">Ohlone</text><text text-anchor="middle" transform="translate(-228,-145)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107);">Stanford</text><text text-anchor="middle" transform="translate(-193,-31)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156);">Udemy</text><text text-anchor="middle" transform="translate(38,-92)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49);">Palm</text><text text-anchor="middle" transform="translate(198,-167)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57);">Beach</text><text text-anchor="middle" transform="translate(45,-108)rotate(29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82);">Portland</text><text text-anchor="middle" transform="translate(142,81)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148);">Jose</text><text text-anchor="middle" transform="translate(146,-47)rotate(-29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57);">Berkeley</text><text text-anchor="middle" transform="translate(-47,-28)" style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74);">Rochester</text><text text-anchor="middle" transform="translate(-159,12)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107);">Khan</text><text text-anchor="middle" transform="translate(-210,-32)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156);">Girl</text><text text-anchor="middle" transform="translate(-234,-105)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115);">Develop</text><text text-anchor="middle" transform="translate(204,29)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148);">Black</text><text text-anchor="middle" transform="translate(-136,-69)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 109, 189);">Girls</text><text text-anchor="middle" transform="translate(-242,-25)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(222, 158, 214);">Thinkful</text><text text-anchor="middle" transform="translate(141,-8)" style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121);">Miami</text><text text-anchor="middle" transform="translate(48,-121)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(82, 84, 163);">Ad</text><text text-anchor="middle" transform="translate(-263,-110)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(107, 110, 207);">Harvard</text><text text-anchor="middle" transform="translate(209,111)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(156, 158, 222);">Carnegie</text><text text-anchor="middle" transform="translate(-198,19)rotate(-29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(99, 121, 57);">Mellon</text><text text-anchor="middle" transform="translate(-123,34)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 162, 82);">Hebrew</text><text text-anchor="middle" transform="translate(-109,83)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(181, 207, 107);">Georgia</text><text text-anchor="middle" transform="translate(-215,7)rotate(-59.999999999999986)" style="font-size: 10px; font-family: Impact; fill: rgb(206, 219, 156);">Southern</text><text text-anchor="middle" transform="translate(-42,-106)rotate(-59.999999999999986)" style="font-size: 10px; font-family: Impact; fill: rgb(140, 109, 49);">Loyola</text><text text-anchor="middle" transform="translate(229,132)rotate(0)" style="font-size: 10px; font-family: Impact; fill: rgb(189, 158, 57);">Marymount</text><text text-anchor="middle" transform="translate(126,41)rotate(29.999999999999993)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 186, 82);">Salzburg</text><text text-anchor="middle" transform="translate(156,95)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 203, 148);">Applied</text><text text-anchor="middle" transform="translate(-259,-41)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(132, 60, 57);">Science</text><text text-anchor="middle" transform="translate(82,140)rotate(-59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(173, 73, 74);">Ulster</text><text text-anchor="middle" transform="translate(-18,-2)rotate(-29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(214, 97, 107);">Glasgow</text><text text-anchor="middle" transform="translate(-42,88)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(231, 150, 156);">Calgary</text><text text-anchor="middle" transform="translate(-251,-133)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(123, 65, 115);">Colby</text><text text-anchor="middle" transform="translate(-285,-70)rotate(59.99999999999999)" style="font-size: 10px; font-family: Impact; fill: rgb(165, 81, 148);">Hackbright</text><text text-anchor="middle" transform="translate(339,76)rotate(59.99999999999999)" style="font-size: 37px; font-family: Impact; fill: rgb(206, 109, 189);">Hackathons</text><text text-anchor="middle" transform="translate(-55,165)rotate(-29.999999999999993)" style="font-size: 52px; font-family: Impact; fill: rgb(222, 158, 214);">Conferences</text><text text-anchor="middle" transform="translate(-175,104)rotate(29.999999999999996)" style="font-size: 10px; font-family: Impact; fill: rgb(57, 59, 121);">Acedemy</text><text text-anchor="middle" transform="translate(51,59)rotate(59.99999999999999)" style="font-size: 80px; font-family: Impact; fill: rgb(82, 84, 163);">Self taught</text></g></svg>
+</div>
+
+
+<!-- Students -->
+<div class="slide" style="background-image: url(img/people.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
 </div>
 
 
 <!-- Huge Pipes -->
-<div class="slide" style="background-image: url(img/pipelineleak.png);  background-size: cover;">
+<div class="slide" id="leaks">
   <header><h1></h1></header>
     <section class="content">
     </section>
@@ -96,10 +191,40 @@ transform: scale(1.5); transform-origin: top left;"><g></g><g transform="transla
     </section>
 </div>
 
+<!-- Deathbulge -->
+<div class="slide" id="deathbulge">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
 
 <!-- hard / easy work -->
-<div class="slide">
-<blockquote class="twitter-tweet" lang="en"><p>Easy work:&#10;1 blaming&#10;2 judging&#10;3 imitating&#10;4 pretending&#10;5 waiting&#10;&#10;Hard work:&#10;1 learning&#10;2 teaching&#10;3 inspiring&#10;4 improving&#10;5 giving</p>&mdash; Vala Afshar (@ValaAfshar) <a href="https://twitter.com/ValaAfshar/status/588159157653655552">April 15, 2015</a></blockquote>
+<div class="slide" id="easyhard">
+<blockquote class="twitter-tweet" lang="en">
+  <div><p>Easy work:</p>
+<ol>
+  <li> blaming</li>
+  <li>judging</li>
+  <li>imitating</li>
+  <li>pretending &amp;</li>
+  <li>waiting</li>
+</ol>
+</div>
+<div>
+<p>Hard work:
+  <ol>
+    <li>learning</li>
+    <li>teaching</li>
+    <li>inspiring</li>
+    <li>improving</li>
+    <li>giving</li>
+  </ul>
+</div>
+<p>&mdash; Vala Afshar (@ValaAfshar) <a href="https://twitter.com/ValaAfshar/status/588159157653655552">April 15, 2015</a></p>
+</blockquote>
+
 </div>
 
 
@@ -118,6 +243,15 @@ transform: scale(1.5); transform-origin: top left;"><g></g><g transform="transla
     <div class="slide" style="background-image: url(img/superpower.gif); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"></div>
 
 
+
+<!-- Superheroes -->
+<div class="slide" style="background-image: url(img/superheros.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
 <!-- Credits -->
 <div class="slide">
   <header><h1>Thank you</h1></header>
@@ -129,8 +263,9 @@ transform: scale(1.5); transform-origin: top left;"><g></g><g transform="transla
 <a href="http://www.uswateralliance.org/wp-content/uploads/2014/01/11553710-a-broken-pipe-that-leaks-water-in-all-directions.jpg">www.uswateralliance.org</a>
 </li>
         <li></li>
-        <li>Art and Caracitures: Eric Geronimo </li>
-        <li>Comic: www.lunarbaboon.com - @lunarbaboon</li>
+        <li>Characitures: Eric Geronimo </li>
+        <li>Comic: <a href="http://www.lunarbaboon.com/comics/powers.html">www.lunarbaboon.com</a> - @lunarbaboon</li>
+        <li>Comic: <a href="http://www.deathbulge.com/comics/155?comic_id=155">www.DeathBulge.com</a> - @deathbulge
       </ul>
     </section>
 </div>
