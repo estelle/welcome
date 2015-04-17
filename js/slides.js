@@ -118,8 +118,6 @@ var Slide = function(node, idx) {
   if (this._node) {
     addClass(this._node, 'slide distant-slide');
   }
-  //this._makeCounter();
-  this._makeBuildList();
 };
 
 
@@ -140,11 +138,10 @@ Slide.prototype = {
 
     if (state == 'current' && !this._visited) {
       this._visited = true;
-      this._makeBuildList();
     }
 
     removeClass(this._node, this._states);
-    addClass(this._node, state);
+    this._node.classList.add(state);
     this._currentState = state;
 
 
@@ -152,29 +149,7 @@ Slide.prototype = {
   var _t = this;
     setTimeout(function(){ _t._runAutos(); } , 400);
   },
-/*
-    _makeCounter: function() {
-    if(!this._count || !this._node) { return; }
 
-      var c = doc.createElement('span');
-    c.innerHTML = this._count;
-    c.className = 'counter';
-    this._node.appendChild(c);
-  },
-  */
-
-    _makeBuildList: function() {
-    this._buildList = [];
-    if (disableBuilds) { return; }
-
-      if (this._node) {
-      this._buildList = query('[data-build] > *', this._node);
-    }
-
-      this._buildList.forEach(function(el) {
-      addClass(el, 'to-build');
-    });
-  },
 
     _runAutos: function() {
     if (this._currentState != 'current') {
@@ -280,15 +255,23 @@ SlideShow.prototype = {
     current: 0,
 
     next: function() {
-    if (!this._slides[this.current-1].buildNext()) {
-      this.current = Math.min(this.current + 1, this._slides.length);
+      if(document.querySelector('.current .temphidden')) {
+        this.addClasses();
+        return true;
+      } else if (!this._slides[this.current-1].buildNext()) {
+        this.current = Math.min(this.current + 1, this._slides.length);
+        this._update();
+      }
+    },
+    prev: function() {
+      this.current = Math.max(this.current-1, 1);
       this._update();
-    }
-   },
-  prev: function() {
-  this.current = Math.max(this.current-1, 1);
-  this._update();
-  },
+    },
+
+    addClasses: function(){
+      var paragraphToShow = document.querySelector('.current .temphidden');
+      paragraphToShow.classList.remove('temphidden');
+    },
 
    go: function(num) {
     if (!num) return;

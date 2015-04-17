@@ -8,14 +8,21 @@ Made by: Estelle Weyl
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 -->
 <link rel="stylesheet" href="css/index.css"/>
+<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Shadows+Into+Light+Two|Architects+Daughter|Rock+Salt' rel='stylesheet' type='text/css'>
 <style>
+h1 {font-family: 'Rock Salt', cursive;}
+blockquote {line-height: 1.4;}
+.slide {
+  font-family: 'Architects Daughter', cursive;
+}
 #chatList section {
   background-image: url(img/peopleITalkTo.png);
   background-repeat: no-repeat;
   background-position: center 95%;
 }
 #chatList img {
-  visibility:hidden;
+  position: relative;
+  top: 20px;
   margin-top: 40px;
 }
 
@@ -87,15 +94,13 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 }
 
 
-#superpower,
-#people,
-#superheros,
-#asshats,
-#plumber {
-  background-image: url(img/people.jpg);
+.slide {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+#plumber {
+  background-image: url(img/people.jpg);
 }
 #superpower {
    background-image: url(img/superpower.gif);
@@ -110,9 +115,49 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 #plumber {
    background-image: url(img/plumber.jpg);
 }
-
+#superstar {
+  background-image: url(img/dist.gif);
+  background-size: auto;
+}
+#imposter {
+  background-image: url(img/dist2.gif);
+  background-size: auto;
+}
+#normal {
+  background-image: url(img/normal.gif);
+  background-size: auto;
+}
 .twitter-tweet {
   margin-right: 240px;
+}
+div.good,
+div.bad {
+  position: absolute;
+  top: calc(50vh + 260px);
+  left: calc(50vw + 260px);
+}
+div.bad {
+  left: calc(50vw - 260px);
+}
+.them,
+.me,
+.us {
+  position: absolute;
+  top: calc(50vh + 140px);
+  left: calc(50vw + 260px);
+  line-height: 1
+}
+.them span,
+.me span,
+.us span {
+  color: red;
+}
+.me {
+  left: calc(50vw - 340px);
+}
+.us {
+  text-align: center;
+  left: calc(50vw - 3em);
 }
 </style>
 </head>
@@ -149,18 +194,39 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 It's a champagne problem-->
 <div class="slide intro" id="chatList">
   <header><h1></h1></header>
-    <section class="content"><img alt="I would rather be speaking to wrong callers" src="img/peopleITalkTo2.png">
+    <section class="content"><img alt="I would rather be speaking to wrong callers" src="img/peopleITalkTo2.png" class="temphidden">
     </section>
 </div>
 
+
+<!-- like minded -->
+<div class="slide">
+  <header><h1></h1></header>
+    <section class="content"><blockquote class="twitter-tweet" lang="en"><p>Seeking to hire &quot;like-minded&quot; people generally ends up being a euphamism for hiring like-skinned, like-gendered and like-aged people.</p>&mdash; Estelle Weyl (@estellevw) <a href="https://twitter.com/estellevw/status/588931710005325824">April 17, 2015</a></blockquote>
+    </section>
+</div>
+
+
 <!-- recruiters don't know what they're doing -->
 <div class="slide" id="linkedinDrinking">
-<blockquote class="twitter-tweet" lang="en"><p>Everyone who (LinkedIn) endorsed me for drinking, your dream has been realized: <a href="http://t.co/jrtx9GPykv">pic.twitter.com/jrtx9GPykv</a></p>&mdash; Jay Fields (@thejayfields) <a href="https://twitter.com/thejayfields/status/573035300110385152">March 4, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p>Everyone who (LinkedIn) endorsed me for drinking, your dream has been realized: </p>&mdash; Jay Fields (@thejayfields) <a href="https://twitter.com/thejayfields/status/573035300110385152">March 4, 2015</a></blockquote>
   <div class="linkedin">
     <p><span style="font-family: arial, sans-serif">Good Day</span> Jay Fields,</p>
     <p>Greetings and thanks for joining my network on LinkedIn. I am interested in discussing <mark>your experience with back-end development and drinking</mark>, as we have been looking for a distinguished candidate such as yourself for a position with one of our clients.
   </div>
 </div>
+
+
+<!-- What recruiters sell us -->
+<div class="slide" id="pingpong">
+<blockquote class="twitter-tweet" lang="en"><p>What recruiters think I want: Beer cart, ping pong table.
+  <br/>
+  <br/>What I really want: Silence, coworkers with good table manners, attention to UX</p>&mdash; Rebecca Slatkin (@RebeccaSlatkin) <a href="https://twitter.com/RebeccaSlatkin/status/588061034822377472">April 14, 2015</a></blockquote>
+</div>
+
+
+
+
 
 
 <!-- worst job ever -->
@@ -170,6 +236,16 @@ It's a champagne problem-->
 </div>
 </div>
 
+
+<!-- worst job description -->
+<div class="slide">
+  <header><h1 style="position: absolute; left: 320px; top: 320px; transform: rotate(-5deg); color: red">Seriously?</h1></header>
+    <section class="content">
+
+  <img src="img/sexistjob.gif">
+    </section>
+</div>
+
 <!-- asshats -->
 <div class="slide" id="asshats">
   <header><h1></h1></header>
@@ -177,13 +253,36 @@ It's a champagne problem-->
     </section>
 </div>
 
-<!-- What recruiters sell us -->
-<div class="slide" id="pingpong">
-<blockquote class="twitter-tweet" lang="en"><p>What recruiters think I want: Beer cart, ping pong table.
-  <br/>
-  <br/>What I really want: Silence, coworkers with good table manners, attention to UX</p>&mdash; Rebecca Slatkin (@RebeccaSlatkin) <a href="https://twitter.com/RebeccaSlatkin/status/588061034822377472">April 14, 2015</a></blockquote>
+
+<!-- inadequacy -->
+<div class="slide intro" id="superstar">
+  <header><h1>Perception</h1></header>
+    <section class="content">
+      <div class="good">Good</div>
+      <div class="bad">Bad</div>
+      <div class="them">&nbsp;&nbsp;&nbsp;&nbsp; <br/><span>★</span></div>
+    </section>
+</div>
+<!-- inadequacy -->
+<div class="slide intro" id="imposter">
+  <header><h1>Self-Perception</h1></header>
+    <section class="content">
+      <div class="good">Good</div>
+      <div class="bad">Bad</div>
+      <div class="me">Me <br/><span>★</span></div>
+    </section>
 </div>
 
+
+<!-- normal distribution -->
+<div class="slide intro" id="normal">
+  <header><h1>Reality</h1></header>
+    <section class="content">
+      <div class="good">Good</div>
+      <div class="bad">Bad</div>
+      <div class="us">All of Us! <br/><span>★ ★ ★ ★ ★ ★ </span></div>
+    </section>
+</div>
 
 <!-- Huge Pipes -->
 <div class="slide" id="pipes">
@@ -222,6 +321,16 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
     <section class="content">
     </section>
 </div>
+
+<!-- MLK -->
+<div class="slide">
+  <header><h1></h1></header>
+    <section class="content"><blockquote>Our lives begin to end the day we become silent about things that matter.</blockquote>
+      - Martin Luther King
+
+    </section>
+</div>
+
 
 <!-- Deathbulge -->
 <div class="slide" id="deathbulge">
