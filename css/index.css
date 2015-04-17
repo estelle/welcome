@@ -260,8 +260,11 @@ a[target=play] {
   width: 100%;
   height: 100%; }
 
-.notes, .temphidden {
-  display: none; }
+.notes {
+  display: none;
+}
+ .temphidden {
+  visibility: hidden }
 
 figure {
   display: block;
