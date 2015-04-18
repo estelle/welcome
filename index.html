@@ -15,6 +15,7 @@ blockquote {line-height: 1.4;}
 .slide {
   font-family: 'Architects Daughter', cursive;
 }
+/*
 #chatList section {
   background-image: url(img/peopleITalkTo.png);
   background-repeat: no-repeat;
@@ -25,7 +26,7 @@ blockquote {line-height: 1.4;}
   top: 20px;
   margin-top: 40px;
 }
-
+*/
 
 
 
@@ -68,6 +69,13 @@ blockquote {line-height: 1.4;}
   background-image: url(img/pipelineleak.png);
   background-size: cover;
 }
+#leaks ul {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  padding: 1em 10%;
+}
 
 
 #deathbulge { /* comic */
@@ -99,7 +107,11 @@ blockquote {line-height: 1.4;}
   background-position: center;
   background-repeat: no-repeat;
 }
-
+#pingpong {
+  background-image: url(img/pp.png);
+  background-position: right bottom;
+  background-size: 50% auto;
+}
 #people {
   background-image: url(img/people.jpg);
 }
@@ -138,10 +150,10 @@ div.good,
 div.bad {
   position: absolute;
   top: calc(50vh + 260px);
-  left: calc(50vw + 260px);
+  left: calc(50vw + 280px);
 }
 div.bad {
-  left: calc(50vw - 260px);
+  left: calc(50vw - 320px);
 }
 .them,
 .me,
@@ -161,7 +173,9 @@ div.bad {
 }
 .us {
   text-align: center;
-  left: calc(50vw - 3em);
+  left: calc(50vw - 3.5em);
+  border-left: 5px dashed #666;
+  border-right: 5px dashed #666;
 }
 </style>
 </head>
@@ -195,12 +209,12 @@ div.bad {
 </div>
 
 <!-- Who I would like to talk to
-It's a champagne problem-->
+It's a champagne problem
 <div class="slide intro" id="chatList">
   <header><h1>People I'm willing to talk to</h1></header>
     <section class="content"><img alt="I would rather be speaking to wrong callers" src="img/peopleITalkTo2.png" class="temphidden">
     </section>
-</div>
+</div>-->
 
 
 <!-- like minded -->
@@ -262,8 +276,8 @@ It's a champagne problem-->
 <div class="slide intro" id="superstar">
   <header><h1>Perception</h1></header>
     <section class="content">
-      <div class="good">Good</div>
-      <div class="bad">Bad</div>
+      <div class="good">Awesome</div>
+      <div class="bad">Aweful</div>
       <div class="them">&nbsp;&nbsp;&nbsp;&nbsp; <br/><span>★</span></div>
     </section>
 </div>
@@ -271,8 +285,8 @@ It's a champagne problem-->
 <div class="slide intro" id="imposter">
   <header><h1>Self-Perception</h1></header>
     <section class="content">
-      <div class="good">Good</div>
-      <div class="bad">Bad</div>
+      <div class="good">Amazing</div>
+      <div class="bad">Horrible</div>
       <div class="me">Me <br/><span>★</span></div>
     </section>
 </div>
@@ -282,9 +296,9 @@ It's a champagne problem-->
 <div class="slide intro" id="normal">
   <header><h1>Reality</h1></header>
     <section class="content">
-      <div class="good">Good</div>
-      <div class="bad">Bad</div>
-      <div class="us">All of Us! <br/><span>★ ★ ★ ★ ★ ★ </span></div>
+      <div class="good">Skilled</div>
+      <div class="bad">Unskilled</div>
+      <div class="us">95.4% of Us! <br/><span>★ ★ ★ ★ ★ ★ </span></div>
     </section>
 </div>
 
@@ -316,6 +330,13 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
 <div class="slide" id="leaks">
   <header><h1></h1></header>
     <section class="content">
+      <ul>
+        <li>Women are 48% of the US work force
+        <li>19.6% to 35.2% of our industry are women
+        <li>50% of women in STEM leave due to hostile work environments.
+        <li>In Development, women earn $0.79 to $0.83 on the dollar
+        <li>In general, $0.78, with Black and Latina women earning $0.64 and $0.56.
+      </ul>
     </section>
 </div>
 

@@ -214,7 +214,7 @@ pre em {
 .slide li {
   margin-bottom: 10px; }
 
-.slide p {
+.slide * {
   font-size: 2rem; }
 
 .force-render {
