@@ -180,6 +180,57 @@ blockquote {line-height: 1.4;}
   background-position: right 40px bottom 40px;
   background-size: auto;
 }
+
+#pyramid ul{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0; padding: 3vh 0 0 0;
+  list-style-type: none;
+  background-image:
+  linear-gradient(50deg,
+    transparent 50%,
+    white 50%
+    ),
+  linear-gradient(-50deg,
+    transparent 50%,
+    white 50%
+    ),
+  linear-gradient(
+    to bottom,
+    red 15%,
+    orange 15%,
+    orange 29%,
+    yellow 29%,
+    yellow 43%,
+    green 43%,
+    green 57%,
+    blue 57%,
+    blue 71%,
+    purple 71%,
+    purple 86%,
+    magenta 86%
+    );
+  background-position: 23vw 0, -23vw 0, center center;
+  background-size: 90vw;
+  background-repeat: no-repeat;
+}
+#pyramid li {
+  margin: 0; padding: 0;
+  text-align: center;
+  flex: 0 0 11vh;
+  line-height: 11vh;
+  text-shadow: 1px 1px 1px white;
+}
+#pyramid li:nth-of-type(n+4){
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#pyramid li:nth-of-type(4) span {background-color: green;}
+#pyramid li:nth-of-type(5) span {background-color: blue;}
+#pyramid li:nth-of-type(6) span {background-color: purple;}
+#pyramid li:nth-of-type(7) span {background-color: magenta;}
 div.good,
 div.bad {
   position: absolute;
@@ -299,6 +350,15 @@ It's a champagne problem
     </section>
 </div>
 
+
+<!-- worst job description -->
+<div class="slide" id="sexistjob">
+  <header><h1>WTF?</h1></header>
+    <section class="content">
+  <img src="img/boobs.jpg">
+    </section>
+</div>
+
 <!-- asshats -->
 <div class="slide" id="asshats">
   <header><h1></h1></header>
@@ -331,8 +391,8 @@ It's a champagne problem
 <div class="slide intro" id="normal">
   <header><h1>Reality</h1></header>
     <section class="content">
-      <div class="good">Skilled</div>
-      <div class="bad">Unskilled</div>
+      <div class="good">Mad Skillz</div>
+      <div class="bad">Beginner</div>
       <div class="us">95.4% of Us! <br/><span>★ ★ ★ ★ ★ ★ </span></div>
     </section>
 </div>
@@ -396,6 +456,9 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
     </section>
 </div>
 
+
+
+
 <!-- MLK -->
 <div class="slide" id="quotes">
   <header><h1></h1></header>
@@ -410,11 +473,38 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
 </div>
 
 
+<!-- 2nd dad or mom -->
+<div class="slide">
+  <header><h1></h1></header>
+    <section class="content">A father and son are in a car that stalled on railroad tracks. An oncoming train smashes into the car. The father is killed; the gravely injured son is rushed to a hospital. The doctor enters the room, sees the child on the table. “I cannot operate on this child,” the doctor says; “this child is my son.” How? How can this be?
+    </section>
+</div>
+
+
+
+
+<div class="slide">
+  <header><h1>Rules</h1></header>
+    <section class="content">
+      <ul>
+        <li>Assume devs are AS skilled as you.
+        <li>Assume their code is as good as yours.
+        <li>Assume devs are correct.
+        <li>Listen. Do not interupt.
+        <li>Use the same language for everyone
+        <li>Use merit, not potential, as bench marks.
+        <li>Stand up when others are silenced.
+    </section>
+</div>
+
+
+
+
 <div class="slide" id="directives">
   <header><h1>Directives</h1></header>
     <section class="content">
       <ul>
-        <li>Give directives instead of criticism</li>
+        <li>Give directives (instead of constructive criticism)</li>
         <li>Incorporated Improv principles</li>
         <li>Onboard everyone</li>
         <li>Include everyone</li>
@@ -451,6 +541,7 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
 </div>
 
 
+
 <!-- Deathbulge -->
 <div class="slide" id="deathbulge">
   <header><h1></h1></header>
@@ -458,6 +549,28 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
     </section>
 </div>
 
+<!-- learning pyramid -->
+<div class="slide" id="pyramid">
+  <header><h1 style="position: absolute; bottom: 0; left: 4vw; transform: rotate(-90deg); text-align: center; transform-origin: left center; line-height: 1.2; width: 100vh;">Faux <br>Learning Pyramid</h1></header>
+    <section class="content">
+      <ul >
+        <li>Lecture</li>
+        <li>Reading</li>
+        <li>Watching Videos</li>
+        <li><span>Demos</span></li>
+        <li><span>Discussion</span></li>
+        <li><span>Practice</span></li>
+        <li><span>Teach others</span></li>
+      </ul>
+    </section>
+</div>
+
+
+
+<!-- Encourage n00bs rather than congratulating pros -->
+    <div class="slide">
+      <blockquote class="twitter-tweet" lang="en"><p>Note to self: spend more time encouraging those who have yet to succeed, than congratulating those who have.</p>&mdash; Mona Nomura (@Mona) <a href="https://twitter.com/Mona/status/587069447682162688">April 12, 2015</a></blockquote>
+    </div>
 
 
 <!-- Be kind to amateurs -->
@@ -465,10 +578,6 @@ transform: scale(1.5); transform-origin: top left; "><g></g><g transform="transl
         <blockquote class="twitter-tweet" lang="en"><p>Be kind to amateurs, there are more of them than professionals and they&#39;re looking to all of you to see how to act.</p>&mdash; Scott Hanselman (@shanselman) <a href="https://twitter.com/shanselman/status/588088015685201920">April 14, 2015</a></blockquote>
     </div>
 
-<!-- Encourage n00bs rather than congratulating pros -->
-    <div class="slide">
-      <blockquote class="twitter-tweet" lang="en"><p>Note to self: spend more time encouraging those who have yet to succeed, than congratulating those who have.</p>&mdash; Mona Nomura (@Mona) <a href="https://twitter.com/Mona/status/587069447682162688">April 12, 2015</a></blockquote>
-    </div>
 
 
 <!-- super power slide-->
